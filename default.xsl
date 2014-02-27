@@ -220,19 +220,5 @@
 	</xsl:for-each>
 </xsl:template>
 
-<!-- Videos -->
-<xsl:template match="table[@class='wysinwyg-video']" mode="recursive-copy">
-	<xsl:for-each select="./tbody/tr">
-		<figure class="video_embed right" data-video-url="{./td[1]}">
-			<div class="video_container">
-				<a href="{./td[1]}">Video loading... (Click to watch if it doesn't load)</a>
-			</div>
-			<xsl:if test="normalize-space(replace(./td[2], '&nbsp;', '')) != ''">
-				<figcaption><xsl:value-of select="./td[2]" /></figcaption>
-			</xsl:if>
-		</figure>
-	</xsl:for-each>
-</xsl:template>
-
 
 <!-- other stuff here, like page template references -->
