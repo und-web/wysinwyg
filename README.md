@@ -11,6 +11,5 @@ How this works is:
 -	The table has a specific class pre-assigned; in this case, "wysinwyg-people".
 -	On publish, there is an XSL transformation that takes the information in each table cell and puts it where ever it goes in a more complicated HTML structure (e.g. the first cell in each row goes inside a `<h1 class="name" />`, the second goes into a `<div class="background-info />`, etc).
 -	The end result is a consistent and perfectly-structured HTML file.
--	
 
 Because the snippets are tables, the WYSIWYG makes it very easy to modify the contents of the snippet without accidentally leaving extra `<div>`s all over the place. Users can easily see what content goes where, and they don't mind that it doesn't look exactly like it will on the published site.
